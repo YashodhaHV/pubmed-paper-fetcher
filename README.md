@@ -1,11 +1,11 @@
 # PubMed Paper Fetcher
 
-This Python tool allows you to fetch research paper metadata from PubMed based on a search query. It filters results to show only those affiliated with biotech/pharmaceutical companies and saves them into an Excel file.
+A Python CLI tool to fetch PubMed research papers and filter by non-academic affiliations, such as biotech and pharmaceutical companies.
 
 ## Features
 - Fetches top research papers using the PubMed API
-- Filters based on organization affiliation (e.g., "pharma", "biotech")
-- Saves results as `.xlsx` file
+- Filters based on organization affiliation (e.g., filters out "university", "hospital", "clinic")
+- Saves results as `.xlsx` or `.csv` file
 
 ## Requirements
 - Python 3.10+
@@ -14,7 +14,7 @@ This Python tool allows you to fetch research paper metadata from PubMed based o
 
 ## Setup Instructions
 
-1. Clone/download the project.
-2. Open terminal inside the folder and run:
+1. Clone or download the project from GitHub.
+2. Open a terminal inside the project folder and run:
    ```bash
    poetry install
