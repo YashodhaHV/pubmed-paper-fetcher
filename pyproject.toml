@@ -1,19 +1,17 @@
-PubMed paper fetcher
+[tool.poetry]
 name = "pubmed-paper-fetcher"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Your Name",email = "you@example.com"}
-]
+description = "Fetch PubMed papers and filter by non-academic affiliations"
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "requests (>=2.32.3,<3.0.0)",
-    "lxml (>=5.3.2,<6.0.0)",
-    "pandas (>=2.2.3,<3.0.0)"
-]
 
+[tool.poetry.dependencies]
+python = ">=3.10"
+requests = "^2.32.3"
+lxml = "^5.3.2"
+pandas = "^2.2.3"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
